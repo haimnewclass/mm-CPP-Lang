@@ -2,15 +2,15 @@
 #include <string.h>
 #include <iostream>
 #include <stdio.h>
-Week7_Reader::Week7_Reader(char listName[100])
+Week7_Reader::Week7_Reader(char listName[MAX_STR])
 {
 	currLine = 0;
 	strcpy_s(ListName, listName);
 }
 
-int Week7_Reader::AddLine(char line[100])
+int Week7_Reader::AddLine(char line[MAX_STR])
 {
-	if (currLine == 10) return -1;
+	if (currLine == MAX_LINES) return -1;
 
 	strcpy_s(Lines[currLine], line);
 	currLine++;
@@ -25,4 +25,8 @@ void Week7_Reader::Print()
 	}
 
 	currLine = 0;		
+}
+
+int Week7_Reader::GetCurrLine() {
+	return currLine;
 }

@@ -139,15 +139,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Child.cpp" />
     <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="ItemPrice.cpp" />
+    <ClCompile Include="ItemPriceEilat.cpp" />
     <ClCompile Include="mm-CPP-Lang.cpp" />
     <ClCompile Include="Tester.cpp" />
     <ClCompile Include="Week7_Reader.cpp" />
+    <ClCompile Include="Week7_ReaderRunner.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Child.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="ItemPrice.h" />
+    <ClInclude Include="ItemPriceEilat.h" />
     <ClInclude Include="Tester.h" />
     <ClInclude Include="Week7_Reader.h" />
+    <ClInclude Include="Week7_ReaderRunner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

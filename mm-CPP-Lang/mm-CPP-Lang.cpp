@@ -3,14 +3,53 @@
 #include "Week7_Reader.h"
 #include <iostream>
 #include "Dog.h"
+#include "Base.h"
+#include "Week7_ReaderRunner.h"
 #include "Tester.h"
+#include "ItemPriceEilat.h"
+#include "Child.h"
 int main()
 {
+    int num;
+
+    ItemPriceEilat eilatItem;
+    num = eilatItem.Calc(100);
+
+    Base b;
+    b.AddNum(10);
+    num = b.Calc();
+
+    Child child;
+    child.AddNum(123);
+    num = child.AddNum(12);
     
+    Base b1;
+    b1 = child;
+     
+
+    Week7_ReaderRunner runner;
+    runner.Run();
+
+
+
     char str[] = "Shoping";
     Week7_Reader r1(str);
 
     char str2[] =  "111111";
+
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.AddLine(str);
+    r1.GetCurrLine();
 
     for (size_t i = 0; i < 12; i++)
     {

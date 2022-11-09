@@ -1,12 +1,16 @@
 #pragma once
+#define MAX_LINES 20
+#define MAX_STR 100
 class Week7_Reader
 {
 public:
-	Week7_Reader(char listName[100]);
-	int AddLine(char line[100]);
+	Week7_Reader(char listName[MAX_STR]);
+	int AddLine(char line[MAX_STR]);
 	void Print();
-	char ListName[100];
-	char Lines[10][100];
+	char ListName[MAX_STR];
+	char Lines[MAX_LINES][MAX_STR];
+	int GetCurrLine();
+private:
 	int currLine;
 };
 
