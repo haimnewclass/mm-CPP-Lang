@@ -141,9 +141,13 @@
   <ItemGroup>
     <ClCompile Include="Dog.cpp" />
     <ClCompile Include="mm-CPP-Lang.cpp" />
+    <ClCompile Include="Tester.cpp" />
+    <ClCompile Include="Week7_Reader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="Tester.h" />
+    <ClInclude Include="Week7_Reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

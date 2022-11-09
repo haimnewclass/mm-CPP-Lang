@@ -1,10 +1,24 @@
 // mm-CPP-Lang.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "Week7_Reader.h"
 #include <iostream>
 #include "Dog.h"
+#include "Tester.h"
 int main()
 {
+    
+    char str[] = "Shoping";
+    Week7_Reader r1(str);
+
+    char str2[] =  "111111";
+
+    for (size_t i = 0; i < 12; i++)
+    {
+        r1.AddLine(str);
+    }
+   
+    r1.Print();
+
     char n1[] = "Kazablan";
     char n2[] = "Lassi";
     Dog Kaza(40000,n1);
@@ -26,7 +40,19 @@ int main()
     Lassi.weight = 25000;
     Lassi.Playing();
    
-    
+
+    Tester* t = new Tester();
+
+    int g = ((TesterBase*)t)->GetN();
+
+    g = ((TesterBase*)t)->Global();
+
+    g = t->GetN();
+
+    g = t->Global();
+
+    g = t->Combine();
+
 
 }
 
