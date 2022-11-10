@@ -27,8 +27,11 @@ void Week7_ReaderRunner::Run()
 	}
 
 	// Deallocate
-	for (int i = 0; i < COUNT; i++)
-	{
-		delete list[i];
-	}
+	/*
+		for (int i = 0; i < COUNT; i++)
+		{
+			delete list[i];
+		}
+	*/
+	delete[] list;
 }
